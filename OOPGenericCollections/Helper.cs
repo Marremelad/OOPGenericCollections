@@ -2,6 +2,7 @@
 
 public abstract class Helper<T>
 {
+    // Method to convert an ICollection<T> into a Stack<T>.
     public static Stack<T> PushToStack(ICollection<T> list)
     {
         Stack<T> stack = new Stack<T>();
@@ -10,7 +11,7 @@ public abstract class Helper<T>
         {
             stack.Push(item);
         }
-
+        
         return stack;
     }
 }

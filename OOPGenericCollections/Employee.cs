@@ -1,12 +1,14 @@
 ﻿namespace OOPGenericCollections;
 
+// Employee class.
 public class Employee
 {
-    public string? Id { get; set; }
-    public string? Name { get; set; }
-    public EmployeeGender Gender { get; set; }
-    public decimal Salary { get; set; }
+    public string? Id { get; set; } // Employee ID.
+    public string? Name { get; set; } // Employee name.
+    public EmployeeGender Gender { get; set; } // Employee gender.
+    public decimal Salary { get; set; } // Employee salary.
 
+    // Enum to define gender options.
     public enum EmployeeGender
     {
         Male,
@@ -14,6 +16,7 @@ public class Employee
         Other,
     }
 
+    // Constructor to initialize an Employee object.
     public Employee(string id, string name, EmployeeGender gender, decimal salary)
     {
         Id = id;
@@ -21,6 +24,4 @@ public class Employee
         Gender = gender;
         Salary = salary;
     }
-    
-    
 }
