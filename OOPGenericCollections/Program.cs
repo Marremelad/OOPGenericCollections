@@ -1,4 +1,9 @@
-﻿namespace OOPGenericCollections;
+﻿//Lab 7 - OOP Generic Collections
+//Mauricio Corte
+//.NET24
+
+
+namespace OOPGenericCollections;
 
 class Program
 {
