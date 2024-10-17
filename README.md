@@ -1,4 +1,4 @@
-# OOPGenericCollections
+# OOPGenericCollections 📚
 
 ## Description
 This program was made with the purpose of learning how to use some generic collections. The program features the use of a stack and a list.
