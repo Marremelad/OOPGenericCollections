@@ -6,7 +6,7 @@ This program was made with the purpose of learning how to use some generic colle
 ### Features
 This program simply outputs text based on some parameters in Program.cs.
 
-### Console Output
+### Console output
 ```console
 105 - Anna - Female - 500000
 items left in the stack = 5
