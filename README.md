@@ -59,7 +59,7 @@ ID = 106, Name = Mike, Salary = 1 000 000,00 kr
 * .NET 8 or higher
 
 ### Get started
-If you are using Visual Studio or any other IDE with an integrated repo-cloning function use it with this URL - https://github.com/Marremelad/OOPGenericCollections
+If you are using Visual Studio or any other IDE with an integrated repo-cloning function use it with this URL - https://github.com/Marremelad/OOPGenericCollections.git
 then open the solution and run the program.
 
 Else, do the following.
