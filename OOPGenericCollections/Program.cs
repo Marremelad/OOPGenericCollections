@@ -9,6 +9,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        string separator = "------------------------------";
+        
         // Creating a list of Employee objects with various attributes.
         List<Employee> listOfEmployees =
         [
@@ -29,7 +31,7 @@ class Program
             Console.WriteLine($"{employee.Id} - {employee.Name} - {employee.Gender} - {employee.Salary}");
             Console.WriteLine($"items left in the stack = {stackOfEmployees.Count}");
         }
-        Console.WriteLine("------------------------------");
+        Console.WriteLine(separator);
         
         
         Console.WriteLine("Retrieve Using Pop Method");
@@ -39,10 +41,10 @@ class Program
             Console.WriteLine($"{employee.Id} - {employee.Name} - {employee.Gender} - {employee.Salary}");
             Console.WriteLine($"Items left in the stack = {stackOfEmployees.Count}");
         }
-        Console.WriteLine("------------------------------");
+        Console.WriteLine(separator);
         
         
-        // stackOfEmployees = Helper<Employee>.PushToStack(listOfEmployees); // Use this line to have all employees in the stack.
+        //stackOfEmployees = Helper<Employee>.PushToStack(listOfEmployees); // Use this line to have all employees in the stack.
         
         stackOfEmployees.Push(listOfEmployees[0]); // Use these three lines to only have three of the five employees in the stack. 
         stackOfEmployees.Push(listOfEmployees[1]);
@@ -55,7 +57,7 @@ class Program
             Console.WriteLine($"{employee.Id} - {employee.Name} - {employee.Gender} - {employee.Salary}");
             Console.WriteLine($"Items left in the stack = {stackOfEmployees.Count}");
         }
-        Console.WriteLine("------------------------------");
+        Console.WriteLine(separator);
 
         
         // Checking if each employee from the list is in the stack and displaying the result.
@@ -63,7 +65,7 @@ class Program
         {
             Console.WriteLine(stackOfEmployees.Contains(listOfEmployees[i]) ? $"Emp{i + 1} is in the stack" : $"Emp{i + 1} is not in the stack" );
         }
-        Console.WriteLine("------------------------------");
+        Console.WriteLine(separator);
 
         
         // Creating a new employee and adding them to the list. Then check if the new employee exists in the list and display the result.
@@ -71,14 +73,14 @@ class Program
         listOfEmployees.Add(newEmployee); // Comment out this line to not add newEmployee to the list.
         
         Console.WriteLine(listOfEmployees.Contains(newEmployee) ? $"Employee {newEmployee.Id} exists in the list" : $"Employee {newEmployee.Id} does not exist in the list");
-        Console.WriteLine("------------------------------");
+        Console.WriteLine(separator);
 
         
         // Finding the first male employee in the list and displaying their details.
         var maleEmployee = listOfEmployees.Find(e => e.Gender == Employee.EmployeeGender.Male);
         
         Console.WriteLine(maleEmployee != null ? $"Found one male employee:\nID = {maleEmployee.Id}, Name = {maleEmployee.Name}, Salary = {maleEmployee.Salary:c}" : "No male employee found");
-        Console.WriteLine("------------------------------");
+        Console.WriteLine(separator);
 
         
         // Finding all male employees in the list and displaying their details.
